@@ -1,10 +1,5 @@
 package test2;
 
-/* 
- * 날짜 : 2025/07/10 09:42
- * 이름 : 조지영
- * 내용 : (문제7) 자바 최대공약수 메서드 연습문제
- */
 public class Test07 {
 	public static void main(String[] args) {
 		
@@ -17,24 +12,24 @@ public class Test07 {
 	
 	// 최대공약수 메서드 정의
 	public static int gcd(int a, int b) {
-		
+
 		int temp = 0;
-		
-		if(a < b) {
+
+		// a, b 둘 중 작은 수를 temp 저장
+		if (a < b) {
 			temp = a;
 		}else {
 			temp = b;
 		}
-		
+
 		while (true) {
-			
-			if(a % temp == 0 && b % temp == 0) {
-				return temp;
-				
+
+			if (a % temp == 0 && b % temp == 0) {
+				break;
 			}
 			temp--;
 		}
-		
+		return temp;
 	}
-
+	
 }

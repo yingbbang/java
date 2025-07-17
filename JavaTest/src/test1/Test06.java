@@ -2,11 +2,7 @@ package test1;
 
 import java.util.Scanner;
 
-/* 
- * 날짜 : 2025/07/09 11:13
- * 이름 : 조지영
- * 내용 : (문제6) 자바 삼항 연산자 연습문제 
- */ 
+
 public class Test06 {
 	public static void main(String[] args) {
 		
@@ -22,5 +18,4 @@ public class Test06 {
 		
 		System.out.println(result);
 	}
-
 }
